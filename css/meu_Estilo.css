@@ -1,0 +1,124 @@
+
+/* formulario */
+/* A pseudo-classe CSS  :root se equipara à raíz de uma árvore, 
+que por sua vez representa o documento. Aplicado ao HTML */
+html,
+:root {
+  height: 100%;
+}
+/*  aqui estamos modificando todos os inputs */
+input {
+  /* A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, 
+  usada para calcular larguras (widths) e alturas (heights) dos elementos. É possível usar 
+  essa propriedade para emular o comportamento dos navegadores (browsers) que não suportam 
+  corretamente a especificação da propriedade CSS box model consulte o link 
+  https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model. */
+  box-sizing: border-box;
+  /* A propriedade CSS outline é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno 
+  consulte o link: https://developer.mozilla.org/pt-BR/docs/Web/CSS/outline */
+  outline: none;
+}
+
+/* Formatando caixa da foto */
+input[type='file']{
+  /* A propriedade CSS  display especifica o tipo de caixa de renderização usada por um elemento
+  consulte https://developer.mozilla.org/pt-BR/docs/Web/CSS/display */
+    display: none;
+}
+
+.max-width{
+max-width: 500px;
+width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content define como o navegador distribui o espaço entre e ao 
+  redor dos itens de conteúdo ao longo do eixo principal de um contêiner 
+  flexível e do eixo embutido de um contêiner de grade. 
+  consultar https://developer-mozilla-org.translate.goog/en-US/docs/Web/CSS/justify-content?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc*/
+  justify-content: center;
+  height: 100%;
+}
+#formulario {
+  width: 800px;
+  min-height: 400px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 30px;
+}
+#formulario legend {
+  color: #f94d00;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 22px;
+}
+.input-group {
+  margin: 10px 0;
+}
+.input-group label {
+  display: block;
+  font-size: 14px;
+  /* A propriedade define o peso (ou negrito) da fonte. Os pesos disponíveis dependem da família de fontes que está definida no momento.
+  consulte https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  font-weight: bold;
+  color: #393939;
+  cursor: pointer;
+}
+
+.input-group input:not([type="checkbox"]) {
+  background: #dedddd;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding: 8px 10px;
+  /* A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos
+  consulte https://www.maujor.com/tutorial/propriedade-css-display.php */
+  display: block;
+  width: 100%;
+}
+.input-group input:focus {
+  border-color: #20b2aa;
+}
+
+.input-group input::placeholder {
+  color: #686868;
+  font-weight: 300;
+}
+.colunas {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.colunas .input-group {
+  width: 48%;
+}
+.footer {
+  text-align: center;
+}
+.botao {
+  background: #73a4dc;
+  border-radius: 2px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botao:hover {
+  background: #5988bd;
+}
+/* Fim formulário */
+
+.bg-AzulEscuro{
+    background-color: #046;
+}
+.bg-Cinzaclaro{
+    background-color: #ddd;
+}
+
+.destaque{
+  background-color: rgb(20, 194, 238);
+}
